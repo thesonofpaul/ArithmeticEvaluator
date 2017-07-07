@@ -1,0 +1,6 @@
+by Zach Paulson
+
+Java project written using IntelliJ IDEA
+
+Evaluates arithmetic expression strings.
+Supported operations: Parentheses, Multiplication, Division, Addition, Subtraction.
