@@ -1,3 +1,7 @@
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+
 /**
  * Created by Zach P on 7/5/2017.
  *
@@ -8,6 +12,15 @@ public class Evaluator {
     private String expression;
     private int position = -1;
     private int currentChar;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter arithmetic expression to be evaluated: ");
+        String expression = br.readLine();
+        Evaluator evaluator = new Evaluator(expression);
+        System.out.print("Computed Value: ");
+        System.out.println(evaluator.parse());
+    }
 
     public Evaluator(String expression) {
         this.expression = expression.replaceAll("\\s","");
