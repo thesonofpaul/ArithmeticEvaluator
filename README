@@ -1,3 +1,11 @@
+to run:
+
+1. Install most recent JRE
+2. Open command line
+3. 'cd' into src/ directory
+4. enter command, "java Evaluator"
+5. program will prompt user to enter arithmetic expression
+
 by Zach Paulson
 
 Java project written using IntelliJ IDEA
